@@ -3,7 +3,7 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Ismertető - {{ page }}. oldal</title>
+    <title>Ismertető - {{ chapter }}. fejezet</title>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
@@ -11,7 +11,9 @@
 </head>
 <body>
 <a href="/">Tartalomjegyzék</a>
+<div id="{{ chapter }}">
 <div id="text"></div>
-<script src="../static/js/page.js"></script>
+</div>
+<script src="../static/js/reader.js"></script>
 </body>
 </html>
