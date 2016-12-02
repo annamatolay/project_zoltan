@@ -15,9 +15,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/chapter/<chapter_number>")
-def chapter(chapter_number):
-    return render_template("/chapter.html", chapter=chapter_number)
+@app.route("/sekcio/<section_number>")
+def section(section_number):
+    return render_template("/section.html", section=section_number)
 
 
 if __name__ == "__main__":
